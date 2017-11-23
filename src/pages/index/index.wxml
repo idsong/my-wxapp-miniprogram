@@ -13,7 +13,6 @@
     <text>wxs include:</text>
     <text>{{test.message}}</text>
   </view>
-  <view bindtap="testLogin">testLogin</view>
   <navigator url="/pages/logs/logs">go to logs</navigator>
   <navigator url="/pages/test/test">go to testComponent</navigator>
 </view>

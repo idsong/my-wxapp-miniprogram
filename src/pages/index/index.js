@@ -1,5 +1,3 @@
-const Login = require('../../utils/login');
-
 const delay = (t = 0) => new Promise((resolve) => setTimeout(resolve, t));
 
 // 获取应用实例
@@ -25,10 +23,5 @@ Page({
 			// 更新数据
 			this.setData({ userInfo });
 		});
-	},
-
-	testLogin() {
-		// login async await test
-		Login.login();
 	}
 });
