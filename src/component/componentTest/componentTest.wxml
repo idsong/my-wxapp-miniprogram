@@ -1,0 +1,7 @@
+<!--component.wxml-->
+<view class="container log-list">
+  <slot name="before"></slot>
+  <view bindtap="emitEvent">触发</view>
+  <slot name="after"></slot>
+  <component-inner></component-inner>
+</view>

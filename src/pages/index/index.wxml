@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<import src="../../wxml/motto/motto.wxml"/>
+<wxs src="../../wxs/test.wxs" module="test" />
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <template is="motto" data="{{motto:motto}}" />
+  </view>
+  <view>
+    <text>wxs include:</text>
+    <text>{{test.message}}</text>
+  </view>
+  <view bindtap="testLogin">testLogin</view>
+  <navigator url="/pages/logs/logs">go to logs</navigator>
+  <navigator url="/pages/test/test">go to testComponent</navigator>
+</view>

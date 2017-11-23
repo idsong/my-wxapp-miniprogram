@@ -1,0 +1,12 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <block wx:for="{{logs}}" wx:for-item="log" wx:key="*this">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view>
+<component-test bindmyevent="onMyEvent">
+  <view slot="before">log111</view>
+  <view slot="after">log222</view>
+</component-test>
+<image src="../../images/face.png"></image>
+<view wx:for="{{lists}}" wx:for-item="list" wx:key="this">{{list}}</view>

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "测试自定义组件",
+  "usingComponents": {
+    "component-test": "../../component/componentTest/componentTest",
+    "component-inner": "../../component/componentInner/componentInner"
+  }
+}

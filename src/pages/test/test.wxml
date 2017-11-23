@@ -1,0 +1,15 @@
+<!--test.wxml-->
+<view class="container log-list">
+  <component-test bindmyevent="onMyEvent">
+    <view slot="before">前22</view>
+    <view slot="after">后22</view>
+  </component-test>
+  <block wx:for="{{logs}}" wx:for-item="log" wx:key="*this">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+  <component-inner></component-inner>
+  <text>stars of background:</text>
+  <view class="stars"></view>
+  <text>stars of image</text>
+  <image src="../../images/stars.svg" width="75" height="15"></image>
+</view>
