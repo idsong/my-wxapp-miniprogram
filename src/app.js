@@ -24,8 +24,5 @@ App({
 	},
 	globalData: {
 		userInfo: null,
-	},
-	onShow() {
-		console.log('__DEV__:', __DEV__);
 	}
 });

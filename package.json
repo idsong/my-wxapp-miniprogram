@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --watch",
+    "start": "webpack --watch --color",
     "prebuild": "rimraf ./build",
-    "build": "cross-env NODE_ENV=production webpack -p",
+    "build": "cross-env NODE_ENV=production webpack -p --color",
     "create-page": "create-wxapp-page --dir=src --indent=tab --style=scss"
   },
   "keywords": [],

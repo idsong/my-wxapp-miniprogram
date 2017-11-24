@@ -1,4 +1,8 @@
-<!--component.wxml-->
-<view class="container log-list">
-  111111
+<view class="container">
+  <view>Component name: {{name}}</view>
+  <slot name="before">this is slot of before</slot>
+  <slot name="after">this is slot of after</slot>
+  <view>This is my component test</view>
+  <button bindtap="clickMe">try it! see what different!</button>
+  <navigator url="/pages/index/index" redirect hover-class="className">go to Page index</navigator>
 </view>

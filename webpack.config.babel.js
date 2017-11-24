@@ -3,6 +3,7 @@ import { resolve } from 'path';
 import { DefinePlugin, EnvironmentPlugin, optimize } from 'webpack';
 import WXAppWebpackPlugin from 'wxapp-webpack-plugin';
 import StylelintPlugin from 'stylelint-webpack-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 const { NODE_ENV } = process.env;
 const isDev = NODE_ENV !== 'production';
@@ -106,6 +107,10 @@ export default () => {
 			new WXAppWebpackPlugin(),
 			new optimize.ModuleConcatenationPlugin(),
 			!isDev && new StylelintPlugin(),
+			new CopyWebpackPlugin([{
+				from: 'src/*.json',
+				flatten: true
+			}])
 		].filter(Boolean),
 		devtool: isDev ? 'source-map' : false,
 		resolve: {
