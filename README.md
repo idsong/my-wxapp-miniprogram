@@ -1,5 +1,7 @@
 # my-wxapp-miniprogram
 
+```bash
+
 #install
 yarn install or npm install
 
@@ -10,5 +12,7 @@ npm run create-page or yarn create-page
 npm run start  or yarn start
 
 
-#create build/, compressed
+#create build/, production
 npm run build or yarn build
+
+```
