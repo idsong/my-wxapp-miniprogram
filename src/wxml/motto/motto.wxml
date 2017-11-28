@@ -2,5 +2,5 @@
 <template name="motto">
   <image class="userinfo-avatar" src="../../images/face.png" background-size="cover"></image>
   <view>motto</view>
-	<view><text class="user-motto">{{motto}}</text></view>
+  <view><text class="user-motto">{{motto}}</text></view>
 </template>

@@ -1,16 +1,16 @@
 $height: 50rpx;
 
 .log-list {
-	display: flex;
-	flex-direction: column;
-	padding: 40rpx;
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
 }
 
 .log-item {
-	margin: 10rpx;
+  margin: 10rpx;
 }
 
 .trigger {
-	height: $height;
-	background: #ff8;
+  height: $height;
+  background: #ff8;
 }
